@@ -52,7 +52,7 @@
   <slot />
   <div class="navigation">
     {#each slidesArr as slide}
-      <a href={slide.url}>{slide.title}</a>
+      <a class="text-xs rounded m-2 p-2 border border-slate-100" href={slide.url}>{slide.title}</a>
     {/each}
   </div>
 </div>
