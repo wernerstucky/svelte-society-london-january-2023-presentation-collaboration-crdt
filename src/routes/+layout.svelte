@@ -49,16 +49,22 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <div class="container max-w-full w-full bg-slate-300">
-  <slot />
-  <div class="navigation">
-    {#each slidesArr as slide}
-      <a class="text-xs rounded m-2 p-2 border border-slate-100" href={slide.url}>{slide.title}</a>
+  <div class="navigation mb-3">
+    {#each slidesArr as slide, index}
+      <a
+        class="text-xs rounded m-2 p-2 border border-slate-100 {index == $currentIndexStore
+          ? 'text-slate-800'
+          : 'text-slate-400'}"
+        href={slide.url}>{slide.title}</a
+      >
     {/each}
   </div>
+  <slot />
 </div>
 
 <style>
   .container {
     min-height: 100vh;
+    height: 100vh;
   }
 </style>
