@@ -12,9 +12,17 @@
       title: "Why",
       url: "/slides/why",
     },
+    why2: {
+      title: "Why2",
+      url: "/slides/why2",
+    },
     demo1: {
       title: "Demo 1",
       url: "/slides/demo1",
+    },
+    references: {
+      title: "References",
+      url: "/slides/references",
     },
   };
 
@@ -23,7 +31,7 @@
   slidesArr = slideKeys.map((key) => slides[key]);
 
   const slidesStore = writable(slidesArr);
-  const currentIndexStore = writable(0);
+  let currentIndex = 0;
 
   const previous = (index) => Math.max(index - 1, 0);
   const next = (index, numElem) => Math.min(index + 1, numElem - 1);
@@ -31,14 +39,19 @@
     const numSlides = slidesArr.length;
     switch (event.key) {
       case "ArrowLeft":
-        $currentIndexStore = previous($currentIndexStore);
-        goto(slidesArr[$currentIndexStore].url);
+        currentIndex = previous(currentIndex);
+        goto(slidesArr[currentIndex].url);
         break;
       case "ArrowRight":
-        $currentIndexStore = next($currentIndexStore, numSlides);
-        goto(slidesArr[$currentIndexStore].url);
+        currentIndex = next(currentIndex, numSlides);
+        goto(slidesArr[currentIndex].url);
         break;
     }
+  }
+
+  function gotoPage(index) {
+    currentIndex = index;
+    goto(slidesArr[index].url);
   }
 </script>
 
@@ -49,17 +62,23 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <div class="container max-w-full w-full bg-slate-300">
-  <div class="navigation mb-3">
+  <div class="navigation mb-3 absolute">
     {#each slidesArr as slide, index}
-      <a
-        class="text-xs rounded m-2 p-2 border border-slate-100 {index == $currentIndexStore
+      <button
+        class="text-xs rounded m-2 p-2 border border-slate-100 {index == currentIndex
           ? 'text-slate-800'
           : 'text-slate-400'}"
-        href={slide.url}>{slide.title}</a
+        on:click={() => {
+          gotoPage(index);
+        }}>{slide.title}</button
       >
     {/each}
   </div>
-  <slot />
+  <div class="w-full h-full flex items-center justify-center">
+    <div class="w-full justify-center items-center">
+      <slot />
+    </div>
+  </div>
 </div>
 
 <style>

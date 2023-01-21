@@ -9,4 +9,6 @@
 
 <h1>JSON Editing</h1>
 
-<JSONEditor content={$svelteStore} onChange={handleChange} />
+<div class="w-96	">
+  <JSONEditor content={$svelteStore} onChange={handleChange} />
+</div>
