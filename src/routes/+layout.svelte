@@ -16,9 +16,17 @@
       title: "Why2",
       url: "/slides/why2",
     },
+    defining: {
+      title: "Defining",
+      url: "/slides/defining",
+    },
     demo1: {
       title: "Demo 1",
       url: "/slides/demo1",
+    },
+    stubber_demo: {
+      title: "Stubber Demo",
+      url: "/slides/stubber_demo",
     },
     references: {
       title: "References",
