@@ -8,29 +8,17 @@
       title: "Start",
       url: "/slides/start",
     },
-    why: {
-      title: "Why",
-      url: "/slides/why",
-    },
-    why2: {
-      title: "Why2",
-      url: "/slides/why2",
+    demo_todo: {
+      title: "Demo Todo",
+      url: "/slides/demo_todo",
     },
     demo1: {
-      title: "Demo 1",
+      title: "Demo JSON",
       url: "/slides/demo1",
     },
-    defining: {
-      title: "Defining",
-      url: "/slides/defining",
-    },
-    blog_api: {
-      title: "Blog API",
-      url: "/slides/blog_api",
-    },
-    blog_crdt: {
-      title: "Blog CRDT",
-      url: "/slides/blog_crdt",
+    demo2: {
+      title: "Demo JSON more",
+      url: "/slides/demo2",
     },
     stubber_demo: {
       title: "Stubber Demo",
@@ -40,7 +28,6 @@
       title: "Where to Start",
       url: "/slides/where_to_start",
     },
-
     references: {
       title: "References",
       url: "/slides/references",
