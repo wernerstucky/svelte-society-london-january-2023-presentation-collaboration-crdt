@@ -3,9 +3,10 @@
   <br /><br />
   <ul class="text-3xl">
     <li>State on the browser = state on the server</li>
-    <li>No save buttons</li>
+    <li>No save buttons to sync edits</li>
     <li>Real-time updates</li>
     <li>Zero API endpoints</li>
     <li>No need to refresh the page to hydrate</li>
+    <li>No timers running on the browser to refresh content</li>
   </ul>
 </div>
