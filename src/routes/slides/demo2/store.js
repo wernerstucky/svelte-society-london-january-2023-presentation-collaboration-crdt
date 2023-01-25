@@ -19,7 +19,7 @@ const ydoc = new Y.Doc();
 const tMap = ydoc.getMap("template");
 
 export const webrtcProvider = new WebrtcProvider(
-  "syncedstore-werner-svelte-society-collaboration",
+  "syncedstore-werner-svelte-society-collaboration-blog-example",
   ydoc
 );
 
