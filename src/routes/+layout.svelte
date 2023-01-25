@@ -16,18 +16,31 @@
       title: "Why2",
       url: "/slides/why2",
     },
+    demo1: {
+      title: "Demo 1",
+      url: "/slides/demo1",
+    },
     defining: {
       title: "Defining",
       url: "/slides/defining",
     },
-    demo1: {
-      title: "Demo 1",
-      url: "/slides/demo1",
+    blog_api: {
+      title: "Blog API",
+      url: "/slides/blog_api",
+    },
+    blog_crdt: {
+      title: "Blog CRDT",
+      url: "/slides/blog_crdt",
     },
     stubber_demo: {
       title: "Stubber Demo",
       url: "/slides/stubber_demo",
     },
+    where_to_start: {
+      title: "Where to Start",
+      url: "/slides/where_to_start",
+    },
+
     references: {
       title: "References",
       url: "/slides/references",

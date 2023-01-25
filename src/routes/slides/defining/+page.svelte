@@ -1,7 +1,7 @@
 <div class="flex flex-col items-center justify-center h-auto">
-  <h1 class="text-6xl font-bold text-slate-800">Defining Collaboration First</h1>
+  <h1 class="text-6xl font-bold text-slate-700">Defining Collaboration First</h1>
   <br /><br />
-  <ul class="text-3xl">
+  <ul class="text-3xl list-disc">
     <li>State on the browser = state on the server</li>
     <li>No save buttons to sync edits</li>
     <li>Real-time updates</li>

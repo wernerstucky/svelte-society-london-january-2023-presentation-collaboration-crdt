@@ -1,5 +1,5 @@
 <div class="flex flex-col items-center justify-center h-auto">
-  <h1 class="text-6xl font-bold text-slate-800 ">Demo of collaborative first software</h1>
+  <h1 class="text-6xl font-bold text-slate-700 ">Demo of collaborative first software</h1>
   <br /><br />
   <a
     href="https://templateeditor.jennydfe.co.za:3800/editor/WIP_Svelte%20Society%20Talk%20Demo%202023"
