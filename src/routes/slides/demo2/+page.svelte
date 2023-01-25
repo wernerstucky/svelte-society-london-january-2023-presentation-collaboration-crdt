@@ -14,7 +14,7 @@
 <div class="flex flex-col items-center justify-center h-auto">
   <h1 class="text-slate-700 text-6xl font-bold">Blog Example</h1>
   <br />
-  <div class="w-96 h-96	">
+  <div class="w-5/6 h-96	">
     <JSONEditor content={$svelteStore} onChange={handleChange} />
   </div>
   <span class="text-xl text-blue-600 p-4"
