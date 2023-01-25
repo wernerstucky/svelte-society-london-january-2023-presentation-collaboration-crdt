@@ -23,11 +23,13 @@
 
 <div class="flex flex-col items-center justify-center h-auto">
   <h1 class="text-slate-700 text-6xl font-bold">Todo List</h1>
-  <a class="text-slate-400 text-sm" href="https://syncedstore.org/docs/svelte/" target="_blank"
-    >lol</a
+  <a
+    class="text-slate-400 text-sm"
+    href="https://syncedstore.org/docs/svelte/"
+    target="_blank"
+    rel="noreferrer">lol</a
   >
   <br />
-  <!-- {JSON.stringify($svelteStore.todos)} -->
   <div class="w-96 h-96	">
     <form on:submit|preventDefault={addTodo}>
       <input

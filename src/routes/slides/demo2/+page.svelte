@@ -17,8 +17,6 @@
   <div class="w-96 h-96	">
     <JSONEditor content={$svelteStore} onChange={handleChange} />
   </div>
-  <!-- {JSON.stringify($svelteStore)}<br />
-  {JSON.stringify($titleStore)}<br /> -->
   <span class="text-xl text-blue-600 p-4"
     >Title : <input type="text" bind:value={$titleStore} class="rounded p-2" /></span
   ><br />
