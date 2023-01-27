@@ -20,10 +20,6 @@
       title: "Demo JSON more",
       url: "/slides/demo2",
     },
-    stubber_demo: {
-      title: "Stubber Demo",
-      url: "/slides/stubber_demo",
-    },
     where_to_start: {
       title: "Where to Start",
       url: "/slides/where_to_start",
